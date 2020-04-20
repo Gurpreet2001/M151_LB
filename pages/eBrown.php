@@ -19,7 +19,10 @@ $_SESSION['eBrown'] = true; //Braunes-Etui wird gekauft
 
 
     <h3>Gewünschte Inhalte</h3>
-
+    <h5>Jeder zusätzliche Artikel kostet 5Chf extra</h5>
+    <small>Inhalte auswählen, Sende-Button drücken und nachdem Ihnen die Anzahlnachricht angezeigt wird nochmal den Sende-Button bestätigen. </small> <br>
+    <small>Falls Sie nur das Etui wollen, bestätigen Sie den Sende-Button ohne Inhalte 2 mal (nicht zu schnell drücken).</small>
+    <hr>
     <?php
       $inhalte = "SELECT bezeichnung FROM Artikel;";//select abfrage
       $result = $pdo->query($inhalte); //ausführung des selects
@@ -43,8 +46,8 @@ $_SESSION['eBrown'] = true; //Braunes-Etui wird gekauft
       if (isset($_POST['button'])) { //Überprüfung, ob der Senden-Button gedrückt wurde
          if (isset($_POST['checkbox'])) { //Überprüfung, ob Checkboxen ausgewählt wurden
  //          $_SESSION['checkedBoxes'] = $_POST['checkbox'];
-           $_SESSION['ePurpleCount'] = count($_POST['checkbox']);
-           echo "There are ".$_SESSION['ePurpleCount']." checkboxe(s) are checked";
+           $_SESSION['eBrownCount'] = count($_POST['checkbox']);
+           echo "Es sind ".$_SESSION['eBrownCount']." checkboxen ausgewählt";
 
            // $_SESSION['selectedItems'] = null;
            // foreach ($_SESSION['checkedBoxes'] as $key) {
