@@ -73,3 +73,15 @@ INSERT INTO Artikel(bezeichnung, preis) VALUES("Marker", 5);
 INSERT INTO Artikel(bezeichnung, preis) VALUES("Radiergummi", 5);
 INSERT INTO Artikel(bezeichnung, preis) VALUES("Spitzer", 5);
 INSERT INTO Artikel(bezeichnung, preis) VALUES("Zirkel", 5);
+
+INSERT INTO Kunde(name, nachname, strasse, plz, ort, telefon, bemerkung, kundeSeit)
+VALUES("Test1", "TestNachname", "TestStrasse1", "9000", "TestStrasse1", "043 300 30 20", "Keine", "28-09-12");
+
+INSERT INTO Kunde(name, nachname, strasse, plz, ort, telefon, bemerkung, kundeSeit)
+VALUES("Test2", "TestNachname", "TestStrasse2", "9000", "TestStrasse2", "043 300 30 20", "Keine", "28-10-12");
+
+INSERT INTO Kunde(name, nachname, strasse, plz, ort, telefon, bemerkung, kundeSeit)
+VALUES("Test3", "TestNachname", "TestStrasse3", "9000", "TestStrasse3", "043 300 30 20", "Keine", "28-11-12");
+
+INSERT INTO Kunde(name, nachname, strasse, plz, ort, telefon, bemerkung, kundeSeit)
+VALUES("Test4", "TestNachname", "TestStrasse4", "9000", "TestStrasse4", "043 300 30 20", "Keine", "28-05-12");
